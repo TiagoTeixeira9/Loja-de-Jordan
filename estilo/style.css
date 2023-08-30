@@ -2,11 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 :root {
@@ -71,6 +72,9 @@
     flex-direction: column;
     justify-content: center;
     background: url(../imagens/wallpaper.jpeg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     height: 378px;
     padding-left:50px;
@@ -123,6 +127,7 @@
     align-items: center;
 
     height: 40vh;
+    padding-top: 40px;
 }
 
 
@@ -132,6 +137,7 @@
     align-items: center;
     
     height: 40vh;
+    padding-bottom: 40px;
 }
 
 .jordans-imagens {
@@ -146,6 +152,9 @@
 }
 
 .img {
+    display: block;
+    max-width: 100%;
+    overflow-x: hidden;
     width: 250px;
     height: 150px;
 
@@ -169,4 +178,109 @@
     font-size: 20px;
     font-weight: 500;
     background: transparent;
+}
+
+@media screen and (max-width: 792px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Estilos gerais */
+    .body {
+        background-color: white;
+    }
+
+    /* Estilos do cabeçalho */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Estilos do desconto */
+    .desconto, .jordanshoes, .footer {
+        width: 100vh;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* Estilos do slogan */
+    .slogan {
+        background: url(../imagens/wallpaper.jpeg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 40px 20px; 
+        text-align: center; 
+    }
+
+    .titulo {
+        font-size: 28px; 
+        line-height: 44px;
+        color: white;
+        text-align: left;
+    }
+
+    .texto {
+        font-size: 18px; 
+        line-height: 30px;
+        padding-top: 10px;
+        color: white;
+        text-align: left;
+    }
+
+    /* Estilos da seção da loja */
+    .texto-loja{
+        width: auto;
+        height: auto;
+    }
+
+    .texto-loja {
+        text-align: center; 
+    }
+
+    .texto-h1 {
+        font-size: 24px; 
+        padding: 30px 0;
+    }
+
+    .texto-p {
+        font-size: 16px;
+        padding: 30px 0;
+    }
+
+    /* Estilos das seções superiores e inferiores dos tênis */
+    .jordans-top, .jordans-bottom {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+        width: auto;
+        height: 100%;
+        padding: 10px 0;
+    }
+
+    /* Estilos das imagens dos tênis */
+    .jordans-imagens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 274px;
+        height: 202px;
+    }
+
+    /* Estilos do rodapé */
+    .footer {
+        width: auto;
+        font-size: 14px; 
+    }
+
+    .texto-footer {
+        font-size: 18px; 
+    }
 }
