@@ -192,13 +192,7 @@
     *{
         margin: 0;
         padding: 0;
-        background-color: white;
         font-family: 'Montserrat', sans-serif;
-    }
-
-    /* Estilos gerais */
-    .body {
-        background-color: white;
     }
 
     /* Estilos do cabeçalho */
@@ -216,16 +210,7 @@
         font-size: 16px;
         font-weight: 600;
     }
-
-    /* Estilos do slogan */
-    .slogan {
-        background: url(../imagens/wallpaper.jpeg) no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 40px 20px; 
-        text-align: center; 
-    }
-
+    
     .titulo {
         font-size: 28px; 
         line-height: 44px;
@@ -262,23 +247,34 @@
     }
 
     /* Estilos das seções superiores e inferiores dos tênis */
-    .jordans-top, .jordans-bottom {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center; 
-        width: auto;
-        height: 100%;
-        padding: 10px 0;
-    }
-
-    /* Estilos das imagens dos tênis */
-    .jordans-imagens {
+    .jordanshoes {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        width: 274px;
-        height: 202px;
+        width: 100vw;
+        height: 60px;
+    
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        background-color: white;
+    }
+    
+    .wrapper-slogan {
+        position: relative;
+        background-color: #181818;
+    }
+    
+    .wrapper-slogan::before {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url(../imagens/wallpaper.jpeg);
+        background-size: cover;
+        filter: opacity(.6);
     }
 
     /* Estilos do rodapé */
